@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>웹기초-리스트</title>
+    <style>
+        div {
+            background-color: rgb(210, 246, 248);
+            border: 1px solid black;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+        .sk {
+            list-style-type:lower-alpha;
+        }
+        .cd {
+            list-style-type: square;
+        }
+        #list {
+            background-color: rgb(248, 248, 192);
+        }
+        #list .cd {
+            color: mediumvioletred;
+        }
+        .btn {
+            background-color: rgb(238, 49, 121);
+            color: #fff;
+            border-style: none;
+            border-radius: 5px;
+            padding: 4px 10px 4PX 10PX;
+        }
+        a { 
+            background: transparent;
+            text-decoration: none; 
+            font-size: 1.4rem;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>웹기초</h1>
+    <button class="btn"><a href="./all_contents.html" title= "목록페이지로 돌아가기">all contents</a></button>
+    <hr />
+    <h2>목록만들기</h2>
+
+    <div>
+        <h3>ol - order list</h3>
+        <ol>
+            <li>웹에 대한 개념 파악</li>
+            <li>자료 수집 분석</li>
+            <li>스케치</li>
+            <li>프로토타입 제작</li>
+            <li>다자인</li>
+            <li>가이드라인 </li>
+            <li>코딩</li>
+        </ol>
+    </div>
+    <div>
+        <h3>ul - unorder list</h3>
+        <ul>
+            <li>웹에 대한 개념 파악</li>
+            <li>자료 수집 분석</li>
+            <li>스케치</li>
+            <li>프로토타입 제작</li>
+            <li>다자인</li>
+            <li>가이드라인 </li>
+            <li>코딩</li>
+        </ul>
+    </div>
+    <div>
+        <h3>dl - data list</h3>
+        <dl>
+            <dt>데이터 제목</dt>
+            <dd>관리할 내용</dd>
+            <dd>관리할 내용</dd>
+            <dd>관리할 내용</dd>
+            <dd>관리할 내용</dd>
+        </dl>
+    </div>
+    <div id="list">
+        <h3>다단 list</h3>
+        <ol>
+            <li>웹에 대한 개념 파악</li>
+            <li>자료 수집 분석</li>
+            <li>스케치
+                <ol class="sk">
+                    <li>구상</li>
+                    <li>초안</li>
+                    <li>스케치</li>
+                </ol>
+            </li>
+            <li>프로토타입 제작</li>
+            <li>다자인</li>
+            <li>가이드라인 </li>
+            <li>코딩
+                <ul class="cd">
+                    <li>html</li>
+                    <li>css</li>
+                    <li>java script</li>
+                </ul>
+                
+            </li>
+        </ol>
+    </div>
+
+    <script>
+        
+    </script>
+</body>
+</html>
+
