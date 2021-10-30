@@ -4,13 +4,117 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>웹기초</title>
+    <title>웹기초 - 테이블 구조</title>
     <style>
+        .table_module {
+            width: 700px;
+            /* height: 400px; */
+            margin: 10px;
+            padding: 20px;
+            background-color: rgb(203, 252, 252);
+        }
+        table {
+            width: 100%;
+            height: auto;
+        }
+        table > caption {
+            width: 100%;
+            border-bottom: 1px solid #000;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+
+        }
+        table, table th, table td, table tr {
+            border: 1px solid #03a;  
+            border-spacing: 0;
+            border-collapse: collapse;         
+        }
+        .date {
+            background-color: rgba(247, 230, 41, 0.541);
+        }
+        .content {
+            background-color: rgba(126, 252, 0, 0.452);
+        }
+        .pay {
+            background-color: rgba(36, 193, 255, 0.74);
+        }
+        thead {
+            background-color: darkcyan;
+            color: #fff;
+        }
+        .title_top {
+            width: 100%;
+            border-bottom: 1px solid darkcyan;
+            color: darkcyan;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+        }
+        tfoot {
+            background-color: rgba(0, 206, 209, 0.74);
+        }
+
     </style>
 </head>
 <body>
-    <div>
+    <h1><a href="./all_contents.html">웹 기초</a></h1>
+    <hr />
 
+    <h2>테이블 구조 이해하기</h2>
+    <p>테이블 구조란?<br />
+        열과 행으로 이루어진 표 형식의 구조
+        
+    </p>
+
+    <div class="table_module">
+            <table summary="2021-10-30">
+                <caption>2021-10-30</caption>             
+                
+                <tr> <th></th> <th>커피</th> <th>버거</th> <th>피자</th> </tr>
+                <tr> <td>a</td> <td>*a</td> <td></td> <td>&a</td> </tr>
+                <tr> <td>b</td> <td>*b</td> <td></td> <td></td> </tr>
+                <tr> <td>c</td> <td></td> <td>#c</td> <td></td> </tr>
+                <tr> <td>d</td> <td></td> <td>D</td> <td>&d</td> </tr>
+
+            </table>
+
+    </div>
+
+    <div class="table_module">
+        <table summary="">
+            <caption>칸 합치기</caption>
+
+            <tr> <td colspan="2">1-1</td>  <td>3-1</td> <td>4-1</td> <td>5-1</td> </tr>
+            <tr> <td>1-2</td> <td colspan="3"> 2-2</td> <td>5-2</td> </tr>
+            <tr> <td rowspan="3">1-3</td> <td>2-3</td> <td>3-3</td> <td>4-3</td> <td>5-3</td> </tr>
+            <tr> <td>2-4</td> <td>3-4</td> <td colspan="2" rowspan="2">4-4</td> </tr>
+            <tr> </td> <td>2-5</td> <td>3-5</td> </tr>
+        </table>
+    </div>
+
+    <div class="table_module">
+        <table summary="2021년 가계부 점검">
+            <caption class="title_top">2021년 가계부</caption>
+
+            <colgroup>
+                <col span="1" class="date">
+                <col span="1" class="content">
+                <col span="2" class="pay">
+            </colgroup>
+            
+            <thead>
+                <tr> <th>사용일시</th> <th>카테고리</th> <th>액수</th> <th>수입/지출</th> </tr>
+            </thead>
+            <tbody>
+                <tr> <td>2021.03.05</td> <td>관리비</td> <td>120,000원</td> <td>지출</td> </tr>
+                <tr> <td>2021.03.06</td> <td>커피</td> <td>3,500원</td> <td>지출</td> </tr>
+                <tr> <td>2021.03.07</td> <td>투자수익</td> <td>45,000원</td> <td>수입</td> </tr>
+                <tr> <td>2021.03.08</td> <td>조각케익</td> <td>7,500원</td> <td>지출</td> </tr>
+                <tr> <td>2021.03.09</td> <td>유튭수익</td> <td>250,000원</td> <td>수입</td> </tr>
+            </tbody>
+            <tfoot>
+                <tr><td colspan="2">***************</td><td>********</td><td>*******</td></tr>
+            </tfoot>
+        </table>
     </div>
 
     <script>
