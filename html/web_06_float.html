@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!-- html/web_06-float.html -->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- [if IE]>
+        <script src="http://bower_components/html5shiv/dist/html5shiv.js"></script>
+    <![endif] -->
+
+    <link rel="shortcut icon" href="../favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="../favicon.png">
+
+    <link rel="stylesheet" href="../css/src/web_06_float.css">
+
+    <title>웹 기초</title>
+    
+</head>
+<body>
+    <!-- layout -->
+   <div id="wrap">
+       <h1><a href="./all_contents.html">웹기초</a></h1>
+       <hr />
+       <h2>float 코드</h2>
+   
+
+   <div class="box">
+       <h3>내부에 overflow 사용</h3>
+       <div class="overflow_type inner">
+           <p>내용 삽입 01</p>
+           <p>내용 삽입 02</p>
+           <p>내용 삽입 03</p>
+           <p>내용 삽입 04</p>
+       </div>
+    </div>
+
+   <div class="box">
+       <h3>다른 요소 이용</h3>
+       <div class="other_type inner">
+           <p>다른 요소를 내부에 이용 01</p>
+           <p>다른 요소를 내부에 이용 02</p>
+           <p>다른 요소를 내부에 이용 03</p>
+           <p>다른 요소를 내부에 이용 04</p>
+           <div class="clear"></div>
+        </div>
+   </div>
+
+   <div class="box">
+       <h3>높이값 지정</h3>
+       <div class="hright_fix_type inner">
+           <div class="in_box">내용</div>
+           <div class="in_box">내용</div>
+           <div class="in_box">내용</div>
+           <div class="in_box">내용</div>
+       </div>
+   </div>
+
+   <div class="box">
+       <h3>가상요소</h3>
+       <ul class="ba_type inner clearfix">
+           <li>before after 로 float 구현</li>
+           <li>before after 로 float 구현</li>
+           <li>before after 로 float 구현</li>
+           <li>before after 로 float 구현</li>
+       </ul>
+   </div>
+   </div>
+    
+</body>
+</html>

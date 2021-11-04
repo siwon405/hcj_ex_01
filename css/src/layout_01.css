@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* css/src/layout_01.css */
+
+/* reset.css */
+body {
+    margin: 0;
+    color: beige;
+}
+
+/* layout.css */
+#wrap {
+    width: 600px;
+    height: auto;
+    margin:0 auto;
+}
+
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: #f07;
+}
+
+#section {
+    /* overflow: auto; */
+    width: 100%;
+    height: auto;
+    background-color: #fa0;
+}
+.set_01 {
+    float: left;
+    width: 40%;
+    height: 300px;
+    background-color: #329664;
+}
+.set_02 {
+    float: left;
+    width: 60%;
+    height: 300px;
+    background-color: mediumaquamarine;
+}
+
+#section:after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: #03f;
+}

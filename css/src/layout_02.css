@@ -1,0 +1,142 @@
+@charset "UTF-8";
+/* css/src/layout_02.css */
+
+/* reset css */
+* {
+    margin: 0; padding: 0; border: 0; outline: 0;
+}
+
+/* common css */
+.clearfix:after,
+.clearfix::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+}
+
+/* ----------------------------------------------- */
+#wrap {
+    width: 600px;
+    height: 1600px;
+    margin: auto;
+    background-color: transparent;    
+    text-align: center; 
+    color: beige;   
+}
+/* #header----------------------------------------------*/
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: #f06;
+}
+/* #section----------------------------------------------*/
+#section {
+    width: 100%;
+    height: auto;    
+    }
+ .setion_01 {
+    float: left;
+    width: 40%;
+    height: 300px;
+    background-color: #329664;
+ }   
+ .setion_02 {
+    float: left;
+    width: 60%;
+    height: 300px;
+    background-color: mediumaquamarine;
+ }
+ /* #section:after,
+ #section::after{
+     content: " ";
+     display: block;
+     width: 100%;
+     height: 0;
+     clear: both;
+ } */
+/* #aside-----------------------------------------------*/
+#aside {
+    width: 100%;
+    height: auto;    
+}
+.side_01 {
+    float: left;
+    width: 30%;
+    height: 300px;
+    background-color: purple;
+}
+.side_02 {
+    float: left;
+    width: 35%;
+    height: 300px;
+    background-color: rgb(187, 158, 187);
+}
+.side_03 {
+    float: left;
+    width: 35%;
+    height: 300px;
+    background-color: rgb(194, 226, 161);
+}
+/* #aside:after,
+#aside::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+} */
+/* #article--------------------------------------------*/
+#article {
+    width: 100%;
+    height: auto;    
+}
+.art_01 {
+     float: left;
+     width: 30%;
+     height: 300px;
+     background-color: orange;
+}
+.art_02 {  
+    float: left;  
+    width: 70%;
+    height: 150px;
+    background-color: paleturquoise;
+}
+.art_03 {
+    float: left;   
+    width: 70%;
+    height: 150px;
+    background-color: rgb(238, 227, 131);
+}
+/* #content---------------------------------------------*/
+#content {
+    width: 100%;
+    height: auto;    
+}
+
+#content .art_01 {
+    float: right;
+    width: 30%;
+    height: 500px;
+    background-color: orange;
+}
+
+#content .art_02 {    
+    width: 70%;
+    height: 150px;
+    background-color: paleturquoise;
+}
+
+#content .art_03 {    
+    width: 70%;
+    height: 350px;
+    background-color: rgb(238, 227, 131);
+}
+/* #footer----------------------------------------------*/
+    #footer {
+    width: 100%;
+    height: 100px;
+    background-color: #03f;
+}

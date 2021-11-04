@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/* css/src/web_06_float.css */
+
+html,body,h1,h2,h3,h4,h5,h6,p,div,ul,li,dl,dt,dd {
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+
+#wrap {
+    width: 800px;
+    height: auto;
+    min-height: 900px;
+    margin: auto;
+    background-color: rgb(233, 255, 244);
+}
+.box {
+    width: 90%;
+    height: auto;
+    min-height: 300px;
+    margin: auto;
+    margin-bottom: 30px;
+    background-color: khaki;
+}
+h3 {
+    width: 100%;
+    text-align: center;
+}
+.inner {
+    width: 95%;
+    height: auto;
+    margin: auto;
+}
+.overflow_type {
+    overflow: auto;
+    height: 250px;
+    background-color: rgb(204, 239, 255);
+}
+.other_type {
+    background-color: rgb(219, 182, 243);
+}
+.hright_fix_type {
+    height: 450px;
+    background-color: #dfc;
+}
+.ba_type {
+    background-color: rgb(247, 182, 54);
+}
+.overflow_type > p,
+.other_type > p,
+.hright_fix_type > div, 
+.ba_type > li {
+    float: left;
+    width: 49%;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.clear {
+    width: 100%;
+    height: 0;
+    clear: both;
+}
+.clearfix:after,
+.clearfix::after {
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 0;
+    clear: both;
+} 
