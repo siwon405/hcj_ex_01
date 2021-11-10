@@ -1,0 +1,85 @@
+/* css/src/layout_03.css */
+#wrap {
+    width: 1600px;
+    height: auto;
+    min-height: 500px;
+    margin: auto;
+    background-color: beige;
+}
+
+#wrap > div {
+    width: 100%;
+    background-color: rgb(199, 255, 255);
+}
+
+/* #headBox ----------------------- */
+#headBox {
+    height: 150px;
+    padding: 34px 50px 0;
+    box-sizing: border-box;
+}
+h1 {
+    float: left;
+    width: 250px;
+    height: 80px;
+    background-color: rgb(85, 209, 209);
+}
+.global_nav {
+    float: left;
+    width: 850px;
+    height: 80px;
+    margin: 0 75px;
+    background-color: rgb(85, 209, 209);
+}
+.user_nav {
+    float: left;
+    width: 250px;
+    height: 80px;
+    background-color: rgb(85, 209, 209);
+}
+
+/* #adViewBox ----------------------- */
+#adViewBox {
+    height: 750px;
+}
+
+/* #localNavBox ----------------------- */
+#localNavBox {
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+
+/* #popularContentBox ----------------------- */
+#popularContentBox {
+    height: 600px;
+}
+
+/* #newContentBox ----------------------- */
+#newContentBox {
+    height: 900px;
+    margin-bottom: 80px;
+}
+
+
+/* #recommendedContentBox------------------------- */
+#recommendedContentBox {
+    height: 800px;
+    margin-bottom: 80px;
+}
+
+/* #communityBox ----------------------- */
+#communityBox {
+    height: 480px;
+}
+
+/* #miniAdBox ----------------------- */
+#miniAdBox {
+    height: 400px;
+    margin-bottom: 80px;
+}
+
+/* #footBox----------------------- */
+#footBox{
+    height: 200px;
+}

@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+/* css/src/web_08_selector.css */
+
+#wrap {
+    width: 800px;
+    height: auto;
+    margin: auto;
+    padding-bottom: 20px;
+    background-color: aliceblue;
+}
+h1 {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 2rem;
+    background-color: paleturquoise;
+}
+h1 a {
+    color: cadetblue;
+    text-decoration: none;
+}
+h2 {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 1px solid rgb(7, 24, 56);
+}
+.part {
+    width: 90%;
+    height: auto;
+    margin: auto;
+    border: 1px double #07a;
+}
+.part h3 {
+    width: 100%;
+    height: 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+dl,dt,dd{
+    margin: 0;padding: 0;
+}
+dl {
+    width: 95%;
+    height: auto;
+    margin: auto;    
+    text-indent: 20px;
+    background-color: #fff;
+}
+dt {
+    width: 100%;
+    height: 30px;
+    border: 1px solid rgb(7, 24, 56);
+}
+dd {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    background-color: #7cf;
+}
+.siblings dt:hover + dd {
+    background-color: #fc7;
+}
+.siblings dt:hover ~ dd {
+    font-size: 1.2rem;
+    font-weight: 900;
+}
+/* nth-child------------------------------------- */
+ul,ol,li {
+    list-style: none;
+}
+.child {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.child li {
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    text-indent: 10px;
+    background: #fff;
+}
+.child > li:first-child {
+    color: #f07;
+}
+.child >li:nth-child(5) {
+    font-size: 1.3rem;
+}
+.child >li:last-child {
+    color: #0aa;
+}
+.child > li:nth-last-child(4) {background-color: #ad7;}
+
+.child > li:nth-child(3n) {
+    text-indent: 3rem;
+}
+.child>li:nth-child(3n-1){
+    border-radius: 20px;
+}
+.child>li:nth-child(3n+1){
+    text-shadow: 2px 2px 2px rgba(12, 12, 12, 0.514);
+}
+
+.of-type dt:nth-of-type(2) {
+    background-color: #fa0;
+}
+.of-type dd:nth-of-type(3n){
+    color: #fff;
+}

@@ -1,39 +1,16 @@
 @charset "UTF-8";
-/* css/src/layout_02.css */
-
-/* reset css */
-/* *=html,body,h1~h6,div,ul,ol,li,dl,dt,dd */
-* {
-    margin: 0; padding: 0; border: 0; outline: 0;
-}
-ol, ul {
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: beige;
-    text-shadow: 2px 2px rgb(252, 93, 2)  ;
-}
-
-/* common css */
-.clearfix:after,
-.clearfix::after {
-    content: " ";
-    display: block;
-    width: 100%;
-    height: 0;
-    clear: both;
-}
+/* css/src/layout_0-2.css */
 
 /* ----------------------------------------------- */
 #wrap {
     width: 600px;
     height: 1600px;
     margin: auto;
-    background-color: transparent;    
-    text-align: center; 
-    color: beige;   
+    background-color: transparent;
+    text-align: center;
+    color: beige;
 }
+
 /* #header----------------------------------------------*/
 #header {
     /* width: calc(100% - 40px); */
@@ -43,61 +20,87 @@ a {
     padding: 30px 20px 20px 20px;
     background-color: #f06;
 }
+
 .logo {
     float: left;
     width: 120px;
-    height: 100px;        
+    height: 50px;
     background-color: rgb(255, 189, 215);
 }
+
 .logo a {
     width: 100%;
     height: 100%;
-    display: block;              
+    display: block;
     text-decoration: none;
     color: beige;
     text-shadow: 2px 2px rgb(248, 2, 2);
 }
-.navigation {    
+
+.navigation {
     float: right;
     width: 400px;
-    height: 100px;    
-    background-color: rgb(133, 27, 69);
+    height: auto;
+    padding-top: 10px;
+    background-color: transparent;
 }
-.navigation ul {    
+
+.navigation ul {
     width: 100%;
-    height: 100%;
-    background-color: rgb(78, 189, 78);
+    height: auto;
+    background-color:transparent;
 }
+
 .navigation li {
     float: left;
-    width: 16.66666%;
-    height: 100%;
+    width: 50px;
+    height: 40px;
+    margin-right: 20px;
     /* padding: 10px; */
+    /* box-sizing: border-box; */
     background-image: linear-gradient(45deg, rgb(255, 124, 1), rgb(252, 227, 0));
 }
+.navigation li:last-child {
+    margin-right: 0;
+}
+
 .navigation li a {
     display: block;
     width: 100%;
-    height: 100%;    
+    height: 100%;
 }
+
 /* #section----------------------------------------------*/
 #section {
     width: 100%;
-    height: auto;    
-    }
- .setion_01 {
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#section > div {
     float: left;
+    height: 300px;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+.setion_01 {
     width: 40%;
-    height: 300px;
     background-color: #329664;
- }   
- .setion_02 {
-    float: left;
+}
+.setion_02 {
     width: 60%;
-    height: 300px;
     background-color: mediumaquamarine;
- }
- /* #section:after,
+}
+.full {
+    width: 100%;
+    height: 100%;
+    border-color: inherit;
+    border: 1px solid #fff;
+    box-sizing: border-box;
+}
+
+/* #section:after,
  #section::after{
      content: " ";
      display: block;
@@ -108,26 +111,30 @@ a {
 /* #aside-----------------------------------------------*/
 #aside {
     width: 100%;
-    height: auto;    
+    height: auto;
 }
+
 .side_01 {
     float: left;
     width: 30%;
     height: 300px;
     background-color: purple;
 }
+
 .side_02 {
     float: left;
     width: 35%;
     height: 300px;
     background-color: rgb(187, 158, 187);
 }
+
 .side_03 {
     float: left;
     width: 35%;
     height: 300px;
     background-color: rgb(194, 226, 161);
 }
+
 /* #aside:after,
 #aside::after {
     content: " ";
@@ -139,30 +146,34 @@ a {
 /* #article--------------------------------------------*/
 #article {
     width: 100%;
-    height: auto;    
+    height: auto;
 }
+
 .art_01 {
-     float: left;
-     width: 30%;
-     height: 300px;
-     background-color: orange;
+    float: left;
+    width: 30%;
+    height: 300px;
+    background-color: orange;
 }
-.art_02 {  
-    float: left;  
+
+.art_02 {
+    float: left;
     width: 70%;
     height: 150px;
     background-color: paleturquoise;
 }
+
 .art_03 {
-    float: left;   
+    float: left;
     width: 70%;
     height: 150px;
     background-color: rgb(238, 227, 131);
 }
+
 /* #content---------------------------------------------*/
 #content {
     width: 100%;
-    height: auto;    
+    height: auto;
 }
 
 #content .art_01 {
@@ -172,19 +183,20 @@ a {
     background-color: orange;
 }
 
-#content .art_02 {    
+#content .art_02 {
     width: 70%;
     height: 150px;
     background-color: paleturquoise;
 }
 
-#content .art_03 {    
+#content .art_03 {
     width: 70%;
     height: 350px;
     background-color: rgb(238, 227, 131);
 }
+
 /* #footer----------------------------------------------*/
-    #footer {
+#footer {
     width: 100%;
     height: 100px;
     background-color: #03f;
