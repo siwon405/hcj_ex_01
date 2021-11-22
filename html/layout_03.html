@@ -15,19 +15,100 @@
 <body>
     <!-- layout -->
     <div id="wrap">
+
         <div id="headBox">
-            <h1></h1>
-            <div class="global_nav"></div>
-            <div class="user_nav"></div>
+            <h1><a href="./all_contents.html">Web</a></h1>
+            <div class="global_nav">
+                <h2>
+                    <span class="blind">Navigation</span>
+                </h2>
+                <ul>
+                    <li><a href="#">link_01</a></li>
+                    <li><a href="#">link_02</a></li>
+                    <li><a href="#">link_03</a></li>
+                    <li><a href="#">link_04</a></li>
+                    <li><a href="#">link_05</a></li>
+                </ul>
+            </div>
+            <div class="user_nav">
+                <h2>user</h2>
+            </div>
         </div>
-        <div id="adViewBox"></div>
-        <div id="localNavBox"></div>
-        <div id="popularContentBox"></div>
-        <div id="newContentBox"></div>
-        <div id="recommendedContentBox"></div>
-        <div id="communityBox"></div>
-        <div id="miniAdBox"></div>
-        <div id="footBox"></div>       
+
+        <div id="adViewBox">
+            <h2 class="blind">Ad View Box</h2>
+
+            <div class="view_indicator">
+                <!-- ul>li*6>a[href="#view_0$"]>span.blind{ad 0$} -->
+                <ul class="clearfix">
+                    <li><a href="#view_01"><span class="blind">ad 01</span></a></li>
+                    <li><a href="#view_02"><span class="blind">ad 02</span></a></li>
+                    <li><a href="#view_03"><span class="blind">ad 03</span></a></li>
+                    <li><a href="#view_04"><span class="blind">ad 04</span></a></li>
+                    <li><a href="#view_05"><span class="blind">ad 05</span></a></li>
+                    <li><a href="#view_06"><span class="blind">ad 06</span></a></li>
+                </ul>
+            </div>
+
+            <div class="view_outer" >
+                <!-- div#view_$$*6>h3{title}+p{desc}+div.more>a[href="#"]{more} -->
+                <div id="view_01">view_01</div>
+                <div id="view_02">view_02</div>
+                <div id="view_03">view_03</div>
+                <div id="view_04">view_04</div>
+                <div id="view_05">view_05</div>
+                <div id="view_06">view_06</div>
+            </div>
+        </div>
+
+        <div id="localNavBox">
+            <h2 class="blind">local nav</h2>
+            <div class="local_nav_outer">local_nav_outer</div>
+        </div>
+
+        <div class="issue_content_wrap">
+            <h2 class="blind">issue content</h2>
+            <div id="popularContentBox">
+                <h3>Popular Content</h3>
+                <div class="pop_con_area container">Popular Content Area</div>
+            </div>
+
+            <div id="newContentBox">
+                <h3>New Content</h3>
+                <div class="new_con_area container">New Content Area</div>
+            </div>
+        </div>
+        
+        <div class="community_wrap">
+            <h2 class="blind">community</h2>
+            <div id="recommendedContentBox">
+                <h3>Recommended Content</h3>
+                <div class="recom_con_area container">
+                    Recommended Content area
+                </div>
+            </div>
+
+            <div id="communityBox">
+                <h3>Community</h3>
+                <div class="com_con_area container">
+                    Community
+                </div>
+            </div>
+        </div>
+        
+
+        <div id="miniAdBox">
+            <h2 class="blind"> Mini Ad Box</h2>
+            <div class="mini_ad_outer">
+                Mini Ad Box
+            </div>
+        </div>
+
+        <div id="footBox">
+            <div class="foot_con_area">
+                <h2>site infomation</h2>
+            </div>
+        </div>       
 
     </div>
 

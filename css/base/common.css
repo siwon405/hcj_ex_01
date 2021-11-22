@@ -10,3 +10,11 @@
     display: block;
     clear: both;
 }
+.blind {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -100000000;
+    overflow: hidden;
+}

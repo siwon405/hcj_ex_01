@@ -1,0 +1,189 @@
+/* css/part/layout_viewBox.css */
+
+#viewBox {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+}
+
+/* #sideBox-------------- */
+#sideBox {
+    float: left;
+    width: 360px;
+    height: auto;
+    min-height: 700px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgba(182, 235, 235, 0.61);
+}
+#sideBox > h3 {
+    width: 100%;
+    /* height: 50px; */
+    margin-left: 20px;
+}
+#sideBox > dl {
+    width: 90%;
+    height: 25%;
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+}
+#sideBox dl:last-of-type {
+    margin-bottom: 0;
+}
+#sideBox dt {
+    width: 100%;
+    height: auto;
+    margin-bottom: 4px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.41);
+    text-align: right;
+}
+#sideBox dd {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2px;
+    border-bottom: 1px solid rgba(182, 235, 235, 0.61);
+    font-size: 0.9rem;
+    text-align: right;
+}
+/* #conBox------------------- */
+#conBox {
+    float: left;
+    width: 520px;
+    height: 700px;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgba(211, 241, 216, 0.61);
+}
+#conBox>h3 {
+    width: 100%;
+    /* height: 50px; */
+    margin-left: 20px;
+}
+
+.con_area {
+    width: 90%;
+    height: 22%;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.61);
+}
+    
+    .con_area_01 {
+        position: relative;
+        height: 25%;
+    }
+
+    .con_view_btn {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        width: 97%;
+        height: 0;        
+        background-color: rgba(176, 224, 230, 0.31);
+    }
+
+    .con_view_btn > button {
+        width: 40px;
+        height: 160px;
+        margin-top: -80px;
+        border-radius: 10px;
+        background-color: rgba(176, 224, 230, 0.61);
+    }
+
+    .next_btn {
+        float: right;
+    }
+    .prev_btn {
+        float: left;
+    }
+
+.con_view_part {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.con_view_part:hover {
+    background-color: rgba(204, 235, 173, 0.61);
+}
+
+/* .con_area_02----------------------------- */
+.con_area_02 {
+    
+}
+.con_card_part > ul {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.con_card_part > ul > li {
+    float: left;
+    width: 20%;
+    height: 130px;
+    margin-right: 6.5%;
+    border-radius: 10px;
+    padding: 6px;
+    box-sizing: border-box;
+    background-color: rgba(204, 235, 173, 0.61);
+}
+.con_card_part > ul > li:last-child {
+    margin-right: 0;
+}
+
+/* card_1------------------------- */
+.img_zone {
+    width: 100%;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.76);
+    /* border: 1px solid rgb(175, 212, 74); */
+    box-sizing: border-box;
+}
+.card > dl {
+    width: 100%;
+    height: 80px;
+    padding-top: 5px;
+    font-size: 10px;
+    box-sizing: border-box;
+    background-color: rgba(167, 229, 253, 0.5);
+}
+.card  dt {
+    width: 100%;
+    height: auto;
+    font-weight: 700;
+    font-size: 10px;
+}
+.card  dd {
+    width: 100%;
+    height: auto;
+    font-weight: 200;
+}
+/* .card .desc {} */
+.card .location {
+    width: 80%;
+    height: auto;
+}
+.card .location a {
+    display: block;
+    width: 100%;
+    height: 20px;
+    padding: 3px;
+    box-sizing: border-box;
+    background-color: rgb(124, 219, 219);
+    color: #fff;
+    font-weight: 900;
+    text-align: center;
+    line-height: 10px;
+    margin-top: 10px;
+    margin-left: 8px;
+}

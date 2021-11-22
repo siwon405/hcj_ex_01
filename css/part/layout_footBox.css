@@ -1,0 +1,22 @@
+/* css/part/layout_footBox.css */
+
+/* #footBox------------ */
+#footBox {
+    width: 100%;
+    height: 120px;
+}
+#footBox > h2 {
+    float: left;
+    width: 120px;
+    height: 100px;
+}
+.address_area {
+    float: left;
+    width: 600px;
+    height: 70px;
+}
+.sns_area {
+    float: right;
+    width: 100px;
+    height: 40px;
+}

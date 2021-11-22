@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<!-- html/layout_03.html -->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/common.css">
+
+    <!-- <link rel="stylesheet" href="../css/src/layout.css"> -->
+
+    <link rel="stylesheet" href="../css/part/layout_wrap.css">
+    <link rel="stylesheet" href="../css/part/layout_headBox.css">
+    <link rel="stylesheet" href="../css/part/layout_viewBox.css">
+    <link rel="stylesheet" href="../css/part/layout_footBox.css">
+
+    <title>웹 레이아웃</title>
+</head>
+<body>
+    <!-- layout -->
+    <div id="wrap">
+        <header id="headBox">
+            <h1>Web</h1>
+            <nav id="navBox">
+                <h2 class="blind">navigation</h2>
+                <ul>
+                    <li><a href="#">link_01</a></li>
+                    <li><a href="#">link_02</a></li>
+                    <li><a href="#">link_03</a></li>
+                    <li><a href="#">link_04</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="viewBox" class="clearfix">
+            <h2 >view Box</h2>
+            <aside id="sideBox">
+                <h3 >side Box</h3>
+                <!-- dl>dt+dd+dd+dd+dd -->
+                <dl>
+                    <dt>title_01</dt>
+                    <dd>content_list_01</dd>
+                    <dd>content_list_02</dd>
+                    <dd>content_list_03</dd>
+                    <dd>content_list_04</dd>
+                    <dd>content_list_05</dd>
+                </dl>
+                <dl>
+                    <dt>title_02</dt>
+                    <dd>content_list_01</dd>
+                    <dd>content_list_02</dd>
+                    <dd>content_list_03</dd>
+                    <dd>content_list_04</dd>
+                    <dd>content_list_05</dd>
+                </dl>
+                <dl>
+                    <dt>title_03</dt>
+                    <dd>content_list_01</dd>
+                    <dd>content_list_02</dd>
+                    <dd>content_list_03</dd>
+                    <dd>content_list_04</dd>
+                    <dd>content_list_05</dd>
+                </dl>
+                <dl>
+                    <dt>title_04</dt>
+                    <dd>content_list_01</dd>
+                    <dd>content_list_02</dd>
+                    <dd>content_list_03</dd>
+                    <dd>content_list_04</dd>
+                    <dd>content_list_05</dd>
+                </dl>
+            </aside>
+            <article id="conBox">
+                <h3 >con Box</h3>
+                <article class="con_area_01 con_area">
+                    <h4 class="blind">con_area 01</h4>
+
+                    <div class="con_view_btn">
+                        <button type="button" class="next_btn">next</button>
+                        <button type="button" class="prev_btn">prev</button>
+                    </div>
+
+                    <div class="con_view_part">ad_area</div>
+                </article>
+                    
+
+                <article class="con_area_02 con_area">
+                    <h4 class="blind">con_area 02</h4>
+
+                    <div class="con_card_part">
+                        <ul class="clearfix">
+                            <!-- card_1-------------------- -->
+                            <li class="card">
+                                <div class="img_zone">
+                                    <span class="blind">description</span>
+                                </div>
+                                <dl>
+                                    <dt>lorem, ipsum.</dt>
+                                    <dd class="desc">
+                                        Lorem ipsum <br />amet sectetur 
+                                    </dd>
+                                    <dd class="location">
+                                        <a href="#">
+                                            more
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </li>
+                            <!-- card_1--------------------- -->
+                            <li class="card">
+                                <div class="img_zone">
+                                    <span class="blind">description</span>
+                                </div>
+                                <dl>
+                                    <dt>lorem, ipsum.</dt>
+                                    <dd class="desc">
+                                        Lorem ipsum <br />amet sectetur 
+                                    </dd>
+                                    <dd class="location">
+                                        <a href="#">
+                                            more
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </li>
+
+                            <li class="card">
+                                <div class="img_zone">
+                                    <span class="blind">description</span>
+                                </div>
+                                <dl>
+                                    <dt>lorem, ipsum.</dt>
+                                    <dd class="desc">
+                                        Lorem ipsum <br />amet sectetur 
+                                    </dd>
+                                    <dd class="location">
+                                        <a href="#">
+                                            more
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </li>
+
+                            <li class="card">
+                                <div class="img_zone">
+                                    <span class="blind">description</span>
+                                </div>
+                                <dl>
+                                    <dt>lorem, ipsum.</dt>
+                                    <dd class="desc">
+                                        Lorem ipsum <br />amet sectetur 
+                                    </dd>
+                                    <dd class="location">
+                                        <a href="#">
+                                            more
+                                        </a>
+                                    </dd>
+                                </dl>
+                            </li>
+
+                            
+                        </ul>
+                    </div>
+                </article>
+                <article class="con_area_03 con_area">
+                    <h4 class="blind">con_area 03</h4>
+                </article>
+                <article class="con_area_04 con_area">
+                    <h4 class="blind">con_area 04</h4>
+                </article>
+            </article>
+        </section>
+
+        <footer id="footBox">
+            <h2>site info</h2>
+            <div class="address_area">
+                <h3>company address</h3>
+                <address>
+                    <p>company address</p>
+                    <p>phone number</p>
+                    <p>copyright</p>
+                </address>
+            </div>
+            <div class="sns_area">
+                <h3>social networks</h3>
+            </div>
+        </footer>
+
+    </div>
+
+
+
+</body>
+
+</html>

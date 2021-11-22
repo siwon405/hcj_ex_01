@@ -1,6 +1,23 @@
+/* common */
+.blind {
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -100000000;
+    overflow: hidden;
+}
+.first_float > li {
+    float: left;
+}
+.first_float > li:first-child {
+    margin-left: 0;
+}
+
 /* css/src/layout_03.css */
 #wrap {
-    width: 1600px;
+    width: 95%;
+    min-width: 1600px;    ;
     height: auto;
     min-height: 500px;
     margin: auto;
@@ -10,29 +27,66 @@
 #wrap > div {
     width: 100%;
     background-color: rgb(199, 255, 255);
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 50px;
 }
 
 /* #headBox ----------------------- */
 #headBox {
+    position: relative;
     height: 150px;
     padding: 34px 50px 0;
     box-sizing: border-box;
+    background-color: rgb(231, 250, 145);
 }
 h1 {
     float: left;
     width: 250px;
     height: 80px;
+    margin-right: 75px;
+    font-size: 1.4rem;
     background-color: rgb(85, 209, 209);
+}
+h2 {
+    font-size: 1.3rem;
 }
 .global_nav {
-    float: left;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    right: 0;
+    margin: auto;
     width: 850px;
-    height: 80px;
-    margin: 0 75px;
+    height: auto;
+    min-height: 80px;
+    padding: 5px 10px;
+    box-sizing: border-box;
     background-color: rgb(85, 209, 209);
 }
-.user_nav {
+.global_nav ul{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+}
+.global_nav li {
     float: left;
+    width: 150px;
+    height: 70px;
+    margin-left: 20px;
+    background-color: rgb(231, 250, 145)
+}
+.global_nav li:first-child {
+    margin-left: 0;
+}
+.global_nav a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 70px;
+}
+.user_nav {
+    float: right;
     width: 250px;
     height: 80px;
     background-color: rgb(85, 209, 209);
@@ -40,46 +94,168 @@ h1 {
 
 /* #adViewBox ----------------------- */
 #adViewBox {
+    position: relative;
     height: 750px;
+    padding: 28px;
+    box-sizing: border-box;
+    border-color: rgb(231, 250, 145);
+}
+.view_indicator {
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    right: 0;
+    width: 850px;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(85, 209, 209);
+}
+.view_indicator ul {
+    width: 100%;
+    height: auto;
+}
+.view_indicator li {
+    float: left;
+    width: auto;
+    height: auto;
+    margin-left: 20px;
+    border-color: rgb(231, 250, 145);
+}
+.view_indicator li:first-child {
+    margin-left: 0;
+}
+.view_indicator a {
+    display: block;
+    width: 120px;
+    height: 40px;
+    
+    
+}
+.view_indicator a:focus {
+    /* width: 200px; */
+    background-color: #fff;
 }
 
+.view_outer {
+    width: 1300px;
+    height: 600px;
+    margin: auto;
+    margin-bottom: 28px;
+    background-color: rgb(85, 209, 209);
+}
+
+/* a {
+    display: block;
+    background-color: #fff;
+} */
+
+#adViewBox a {
+    display: inline-block;
+    margin: auto;
+    background-color: #fff;
+    font-size: 1rem;
+}
 /* #localNavBox ----------------------- */
 #localNavBox {
     height: 250px;
+    padding: 18px 50px;
     margin-bottom: 50px;
+    box-sizing: border-box;
+    border-color: rgb(231, 250, 145);
 }
-
-
+.local_nav_outer {
+    width: 1500px;
+    height: 196px;
+    margin: auto;
+    background-color: rgb(85, 209, 209);
+}
+/* ========================================== */
+.issue_content_wrap,
+.community_wrap {
+    width: 100%;
+    height: auto;
+}
 /* #popularContentBox ----------------------- */
 #popularContentBox {
     height: 600px;
+}
+ h3 {
+    width: 1300px;
+    height: 50px;
+    margin: auto;
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    background-color: rgb(85, 209, 209);
+}
+.container {
+    width: 1300px;
+    height: auto;
+    min-height: 300px;
+    margin: auto;
+    background-color: rgb(85, 209, 209);
+}
+.pop_con_area {
+    height: 470px;
 }
 
 /* #newContentBox ----------------------- */
 #newContentBox {
     height: 900px;
     margin-bottom: 80px;
+    
+} 
+.new_con_area {
+    height: 700px;
 }
-
-
 /* #recommendedContentBox------------------------- */
 #recommendedContentBox {
-    height: 800px;
+    height: auto;
+    min-height: 800px;
     margin-bottom: 80px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    /* background-color: rgb(231, 250, 145); */
+}
+.recom_con_area {
+    min-height: 440px;
 }
 
 /* #communityBox ----------------------- */
 #communityBox {
-    height: 480px;
+    height: auto;
+    min-height: 800px;
+    padding-top: 60px;
+    box-sizing: border-box;
+    /* background-color: rgb(231, 250, 145); */
 }
 
 /* #miniAdBox ----------------------- */
 #miniAdBox {
-    height: 400px;
+    height: auto;
+    min-height: 400px;
     margin-bottom: 80px;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: rgb(231, 250, 145);
+}
+.mini_ad_outer {
+    width: 100%;
+    max-width: 1500px;
+    height: 300px;
+    margin: auto;
+    background-color: rgb(85, 209, 209);
 }
 
 /* #footBox----------------------- */
 #footBox{
-    height: 200px;
+    height: auto;
+    padding: 22px 0;
+}
+.foot_con_area {
+    width: 1300px;
+    height: 140px;
+    margin: auto;
+    background-color: rgb(85, 209, 209);
 }

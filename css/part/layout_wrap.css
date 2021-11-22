@@ -1,0 +1,7 @@
+/* css/part/layout_wrap.css */
+
+#wrap {
+    width: 960px;
+    height: auto;
+    min-height: 850px;
+}

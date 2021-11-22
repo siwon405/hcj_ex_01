@@ -1,0 +1,98 @@
+
+/* #wrap---------- */
+#wrap{
+    position: relative;
+    width: 100%;
+    max-width: 1800px;
+    margin: auto;
+    padding-top: 170px;
+}
+#headBox,#viewBox,#cotentBox,#footBox {
+    border: 3px solid rgb(208, 231, 231);  
+    border-radius: 20px; 
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;    
+}
+
+/* #headBox ---------- */
+#headBox {
+    position: fixed;
+    left: 5%;
+    top: 0;
+    width: 90%;
+    height: 150px;
+    margin: auto;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    float: left;
+    width: 150px;
+    height: 80px;
+    color: rgba(0, 0, 0, 0.61);
+}
+h2 {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.61);
+}
+h3 {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.61);
+}
+#navBox {
+    display: block;
+    float: right;
+    width: 800px;
+    height: 100px;
+}
+
+.user_navigation {
+    float: right;
+    width: 200px;
+    height: 30px;
+}
+
+.global_navition {
+    float: right;
+    width: 700px;
+    height: 40px;
+    margin-top: 30px;
+}
+
+/* #viewBox ---------- */
+#viewBox {
+    width: 100%;
+    height: 900px;    
+    /* padding-top: 150px; */
+    
+}
+
+/* #sideBox------------- */
+#sideBox {
+    position: fixed;
+    top: 180px;
+    left: 85%;
+    margin-left: 50px;
+    width: 160px;
+    height: 400px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(208, 231, 231);
+}
+
+/* #cotentBox ---------- */
+#cotentBox {
+    width: 800px;
+    height: 1200px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* #footBox---------- */
+#footBox{
+    width: 90%;
+    height: 300px;
+    margin: auto;
+}
