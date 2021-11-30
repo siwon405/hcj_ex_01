@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<!-- html/web_form.html -->
+<html lang="ko-KR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/base/reset.css">
+    <link rel="stylesheet" href="../css/base/common.css">
+    <link rel="stylesheet" href="../css/src/web_form.css">
+
+    <title>웹 기초</title>
+</head>
+<body>
+    <!-- layout -->
+    <div id="wrap">
+        <h1><a href="./all_contents.html">Web</a></h1>
+        <hr />
+        <h2>form 기능 이해</h2>
+        
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>form 영역에 따른 제목</legend>
+                <input type="text" id="userId" name="sendName" value="">
+                <label for="userId">
+                    아이디를 입력하세요
+                </label>
+                <br />
+                <input type="password" id="userPw" name="sendPw" value="">
+                <label for="userPw">
+                    비밀번호를 입력하세요
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>입력</legend>
+                <ul>
+                    <li>
+                        <input type="text" name="textName" id="textName"  value="" 
+                                maxlength="20" placeholder="아이디" required />
+                        <label for="textName">내용을 입력하세요</label>
+                    </li>
+                    <li>
+                        <input type="text" name="textPassword" id="textPassword" value="" required />
+                        <label for="textPassword">비밀번호를 입력하세요</label>
+                    </li>
+                    <li>
+                        <input type="hidden" name="hiddenName" value="value_insert /">
+                    </li>
+                    <li>
+                        <input type="search" name="textSearch" id="textSearch" value="">
+                        <label for="textSearch">검색어를 입력하세요</label>
+                    </li>                        
+                    <li>
+                        <input type="url" name="textUrl" id="textUrl" value="" />
+                        <label for="textUrl">홈페이지 주소입력</label>
+                    </li>
+                    <li>
+                        <input type="email" name="textEmail" id="textEmail" value="" />
+                        <label for="textEmail">이메일 입력</label>
+                    </li>
+                    <li>
+                        <input type="tel" name="textTel" id="textTel" value="" />
+                        <label for="textTel">전화번호 입력</label>
+                    </li>
+                    <!-- html5---------- -->
+                     
+                    <li>
+                        <label for="selectColor">색상을 선택하세요</label>
+                        <input type="color" name="selectColor" id="selectColor" value="" />
+                    </li>
+                    <li>
+                        <label for="myDate">날짜를 선택하세요</label>
+                        <input type="date" name="myDate" id="myDate" value="">
+                    </li>
+                    <li>
+                        <label for="dateTime">원하는 시간을 입력하세요</label>
+                        <input type="datetime" name="dateTime" id="dateTime">
+                    </li>                   
+                    
+                </ul>
+                <!-- <input  type="submit" value="다음" />  -->
+            </fieldset>
+
+            <fieldset class="radio_type">
+                <legend>체크 - radio</legend>
+                <p>통신사를 선택하세요</p>
+                <ul>
+                    <li>
+                        <input type="radio" id="sk" name="tele_com" value="sk" />
+                        <label for="sk">SK 텔레콤</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="kt" name="tele_com" value="kt" />
+                        <label for="kt">Kt 올레</label>
+                    </li>
+                    <li>
+                        <input type="radio" id="lg" name="tele_com" value="lg" />
+                        <label for="lg">LG U+</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>체크 - checkbox</legend>
+                <p>코스를 선택하세요</p>
+                <ul>
+                    <li><input type="checkbox" id="web_01" name="web_course" value="HTML">
+                        <label for="web_01">HTML</label>
+                    </li>
+                    <li><input type="checkbox" id="web_02" name="web_course" value="CSS">
+                        <label for="web_02">CSS</label>
+                    </li>
+                    <li><input type="checkbox" id="web_03" name="web_course" value="JavaScript">
+                        <label for="web_03">Java Script</label>
+                    </li>
+                    <li><input type="checkbox" id="web_04" name="web_course" value="Node-react">
+                        <label for="web_04">Node-react</label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>체크 - other</legend>
+                <ul>
+                    <li>
+                        <label for="selectNum">수량을 입력하세요</label>
+                        <input type="number" id="selectNum" name="selectNum" value=""
+                               min="1" max="100" step="5" />
+                    </li>
+                    <li>
+                        <label for="soundStep">볼륨 조절</label>
+                        <input type="range" id="soundStep" name="soundStep" value=""
+                               min="0" max="20" step="3" />
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>버튼</legend>
+                <ul>
+                    <li>
+                        <input type="submit" value="확인" />
+                    </li>
+                    <li>
+                        <input type="reset" value="취소">
+                    </li>
+                    <li>
+                        <label for="location" class="blind">지도검색</label>
+                        <input type="button" id="location" name="location" value="지도검색">
+                    </li>
+                    <li class="img_btn">
+                        <input type="image" src="../img/a_01_img.jpg" alt="확인 전송" value="확인 전송">
+                    </li>
+                    <li>
+                        <label for="sendData"></label>전송할 파일을 선택하세요</label><br />
+                        <input type="file" name="sendFile" id="sendData" value="">
+                    </li>
+                </ul>
+            </fieldset>
+
+            <fieldset>
+                <legend>확장형</legend>
+                <div>
+                    <label for="sendultiText">내용을 입력하세요</label><br />
+                    <textarea name="sendultiText" id="sendultiText" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <label for="web_course">코스를 선택하세요</label>
+                    <select name="web_course" id="web_course">
+                        <option>web_course></option>
+                        <option value="HTML">HTML</option>
+                        <option value="CSS">CSS</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="Node-react">Node-react</option>
+                    </select>
+                </div>
+                <div>
+                    <button type="submit">확인</button>
+                    <button type="reset">취소</button>
+                    <button type="button">버튼</button>
+                </div>
+            </fieldset>
+
+        </form>
+
+    </div>
+
+
+</body>
+</html>

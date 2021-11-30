@@ -1,0 +1,75 @@
+/* css/src/web_13_iframe.css */
+body {
+    background-color: #000;
+    color: #Fff;
+}
+#wrap {
+    width: 960px;
+    height: auto;
+    margin: auto;
+    min-height: 300px;
+    padding-bottom: 50px;
+}
+h1, h2, h3 {
+    margin-bottom: 10px;
+}
+.part {
+    width: 100%;
+    height: auto;
+    border: 1px solid #Fff;
+    padding: 20px;
+    background-color: #000;
+    color: #Fff;
+}
+iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    background-color: paleturquoise;
+}
+.youtube iframe {
+    width: 100%;
+    height: auto;
+    min-height: 500px;
+    margin: auto;
+}
+
+.style {
+    /* display: block;
+    float: right; */
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+
+.style a {
+    
+    color: yellow;
+    font-weight: 900;
+}
+
+audio {
+    margin-top: 10px;
+}
+
+._part {
+    width: 100%;
+    overflow: hidden;
+    border: 1px solid #Fff
+}
+.movie {
+    width: 960px;
+    height: 600px;
+    background-color: #000;
+    background-image: url("../../img/Untitled.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+}
+
+.movie > .video {
+    width: auto;
+    height: auto;
+    min-height: 100%;
+    min-height: 100%;
+    
+}
